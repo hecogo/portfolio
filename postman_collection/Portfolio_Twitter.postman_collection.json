@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "00301b28-718d-476e-81aa-ace851e02e2f",
+		"name": "Portfolios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Portfolio By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/portfolios/6",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"portfolios",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Portfolio By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Henry\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/portfolios/6",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"portfolios",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All portfolios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/portfolios",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"portfolios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Twitter Timeline Tweets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/twitter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"twitter"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
